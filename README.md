@@ -22,3 +22,12 @@ git clone git@github.com:bry4n/sinatra-mvc.git
 
 2) `unicorn`
 
+### rack
+
+- Thin
+
+1) rackup -s thin -p 8080
+
+- Mongrel
+
+2) rackup -s mongrel -p 8080
