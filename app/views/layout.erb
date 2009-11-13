@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">	
+	<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Welcome</title>
+	<link ref="stylesheet" href="/css/main.css" type="text/css" media="screen" charset="utf-8">
+	<style>
+		body { padding: 0; margin: 0; background-color: #f2f2f2; }
+		.header { height: 80px; width: 100%; background-color: #111; padding-top: 20px; }
+		.header h1 { color: #e1e1e1; margin-left: 10px; }
+		.body { clear:both; width: 100%; height: 300px; margin-left: 10px; }
+		.footer { color: #eee; background-color: #444; clear:both; width: 100%; font-size: 12px; text-align: center;  bottom: 0px; left: 0px; height: 50px; position: fixed; padding-top: 5px; }
+	</style>
+</head>
+<body>
+<div class="header">
+ <h1> Welcome to Sinatra-MVC </h1>
+</div>
+<div class="body">
+<%= yield %>
+</div>
+<div class="footer">
+  Powered by Sinatra-MVC
+</div>
+</body>
+</html>
