@@ -22,10 +22,13 @@ Create your own controllers, models, views in `app/` directory
 
 - Views: `app/views`
 
-To point the `/` to controller, edit `configs/routes.rb`
+To point the `/` to a particular controller, edit `configs/routes.rb`
 
 Library dependencies as Template engines, Databases, etc.., edit `configs/deps.rb`
 
+Serve static files (jquery, css, images, downloads), place static files in `public/`
+
+Write your own extensions (helpers) in `helpers/`
 
 ---
 
