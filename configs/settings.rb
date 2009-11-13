@@ -1,8 +1,11 @@
+# :development, :production, :test
 set :environment, :development
 
-set :server, "thin"
+# thin, mongrel, webrick
+set :server, "webrick"
+
 set :host, "0.0.0.0"
-set :port, 8181
+set :port, 8080
 
 set :views, 'app/views'
 set :public, 'public'
