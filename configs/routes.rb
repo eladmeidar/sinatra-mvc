@@ -1,3 +1,3 @@
 get "/" do
- redirect "/hello/"
+ redirect "/welcome/"
 end
