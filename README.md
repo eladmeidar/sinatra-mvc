@@ -20,7 +20,7 @@ git clone git@github.com:bry4n/sinatra-mvc.git
 
 1) sudo gem install unicorn
 
-2) `unicorn`
+2) `unicorn -C configs/unicorn.rb`
 
 ### rack
 
