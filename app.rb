@@ -3,6 +3,7 @@ require 'sinatra'
 require 'configs/deps'
 
 load 'configs/settings.rb'
+load 'configs/configures.rb'
 
 Dir.glob("app/controllers/*.rb") {|file| load file}
 Dir.glob("app/models/*.rb") {|file| load file}
