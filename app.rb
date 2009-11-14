@@ -1,3 +1,6 @@
+log = File.new('log/sinatra.log', 'a+')
+$stderr.reopen(log)
+
 require 'rubygems'
 require 'sinatra'
 require 'configs/deps'
