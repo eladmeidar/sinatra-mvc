@@ -33,6 +33,18 @@ Serve static files (jquery, css, images, downloads), place static files in `publ
 
 Write your own extensions (helpers) in `helpers/`
 
+Test your app in interactive shell, type: `script/console`
+
+---
+
+### To Do
+
+- RESTful API emitters (JSON, XML, YAML, etc..)
+
+- script/generate like rails (creating controllers (full CRUD), models, views automatically)
+
+- gem package
+
 ---
 
 ### shotgun
