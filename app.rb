@@ -1,5 +1,10 @@
-log = File.new('log/sinatra.log', 'a+')
-$stderr.reopen(log)
+require "yaml"
+
+config = YAML.load_file("configs/config.yml")
+if config["logging"] == true
+  log = File.new('log/sinatra.log', 'a+')
+  $stderr.reopen(log)
+end
 
 require 'rubygems'
 require 'sinatra'
