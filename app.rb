@@ -10,7 +10,15 @@ require 'rubygems'
 require 'sinatra'
 require 'configs/deps'
 
-load 'configs/settings.rb'
+set :environment, :"#{config['environment']}"
+set :server, config["server"]
+set :host, config["host"]
+set :port, config["port"].to_i
+set :views, 'app/views'
+set :public, 'public'
+
+enable :sessions, :logging, :dump_errors, :raise_errors, :static
+
 load 'configs/configures.rb'
 
 Dir.glob("app/controllers/*.rb") {|file| load file}

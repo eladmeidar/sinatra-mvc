@@ -1,2 +1,6 @@
 ---
 logging: false
+server: thin
+host: 0.0.0.0
+port: 8080
+environment: development

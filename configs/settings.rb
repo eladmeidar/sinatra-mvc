@@ -1,11 +1,14 @@
+require "yaml"
+config = YAML.load_file("configs/config.yml")
+
 # :development, :production, :test
-set :environment, :development
+set :environment, :"#{config['environment']}"
 
 # thin, mongrel, webrick
-set :server, "webrick"
+set :server, config["server"]
 
-set :host, "0.0.0.0"
-set :port, 8080
+set :host, config["host"]
+set :port, config["port"].to_i
 
 set :views, 'app/views'
 set :public, 'public'
