@@ -2,7 +2,7 @@ module Sinatra
 
  module Liquid
 
-  def liquid (template, options={}, locals={})
+  def liquid(template, options={}, locals={})
    render :liquid, template, options, locals
   end
 

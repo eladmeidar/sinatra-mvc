@@ -4,6 +4,7 @@ require 'sinatra/base'
 
 #require 'haml'
 #require 'liquid'
+#require 'ruty'
 
 ## Database
 

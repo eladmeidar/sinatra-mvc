@@ -2,11 +2,11 @@ module Sinatra
 
  module Textile
 
-  def textile (template, options={}, locals={})
+  def textile(template, options={}, locals={})
    render :textile, template, options, locals
   end
 
-  def tx (template, options={}, locals={})
+  def tx(template, options={}, locals={})
    render :textile, template, options, locals
   end
 

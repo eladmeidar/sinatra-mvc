@@ -2,11 +2,11 @@ module Sinatra
 
  module Markdown
 
-  def markdown (template, options={}, locals={})
+  def markdown(template, options={}, locals={})
    render :markdown, template, options, locals
   end
 
-  def md (template, options={}, locals={})
+  def md(template, options={}, locals={})
    render :markdown, template, options, locals
   end
 
