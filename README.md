@@ -3,6 +3,9 @@ An Agile Sinatra-based MVC app
 
 Want an agile MVC structured app in Sinatra? 
 
+## Prerequisites
+
+- (sinatra)[http://www.sinatra.com/] (sudo gem install sinatra)
 
 
 ## Instructions
