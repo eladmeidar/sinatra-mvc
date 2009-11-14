@@ -7,7 +7,7 @@ Want an agile MVC structured app in Sinatra?
 
 ## Instructions
 
-git clone git@github.com:bry4n/sinatra-mvc.git firstapp
+`git clone git@github.com:bry4n/sinatra-mvc.git firstapp`
 
 1) `cd firstapp`
 
