@@ -14,9 +14,14 @@ Want an agile MVC structured app in Sinatra?
 
 1) `cd firstapp`
 
-2) `ruby app.rb`
+2) rake gems:install
 
-3) go to http://localhost:8080/
+3) rake app:launch  # Start app and Launch browser
+
+or
+
+3) rake app:run # Start app without browser
+4) go to http://localhost:8080/
 
 ---
 

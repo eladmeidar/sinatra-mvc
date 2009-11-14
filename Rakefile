@@ -4,6 +4,13 @@ require 'yaml'
 begin
  require "launchy"
 rescue
+  module Launchy
+    class << self
+      def open(url)
+        system "open #{url}"
+      end
+    end
+  end
 end
 
 task :default => :test
@@ -29,11 +36,15 @@ end
 namespace :app do
   desc "Start app and launch browser"
   task :launch do
+    if defined?("Launchy")
     config = YAML.load_file("configs/config.yml")
     app = Thread.new { system "ruby app.rb" }
     web = Thread.new { sleep(1); Launchy.open("http://#{config["host"]}:#{config["port"]}/") }
     app.join
     web.join
+    else
+      puts "please install launchy or run rake gems:install"
+    end
   end
   desc "Start app"
   task :run do
