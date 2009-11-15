@@ -7,10 +7,12 @@
 	<link ref="stylesheet" href="/css/main.css" type="text/css" media="screen" charset="utf-8">
 	<style>
 		body { padding: 0; margin: 0; background-color: #f2f2f2; }
-		.header { height: 80px; width: 100%; background-color: #111; padding-top: 20px; }
-		.header h1 { color: #e1e1e1; margin-left: 10px; }
+		.header { height: 80px; width: 100%; padding-top: 20px; background-color: #222; }
+		.header h1 { color: #f2f2f2; margin-left: 10px; }
 		.body { clear:both; width: 100%; height: 300px; margin-left: 10px; }
 		.footer { color: #eee; background-color: #444; clear:both; width: 100%; font-size: 12px; text-align: center;  bottom: 0px; left: 0px; height: 50px; position: fixed; padding-top: 5px; }
+		.footer a { color: #fff; text-decoration: none; }
+                .footer a:hover { text-decoration: underline; }
 	</style>
 </head>
 <body>
@@ -21,7 +23,7 @@
 <%= yield %>
 </div>
 <div class="footer">
-  Powered by Sinatra-MVC
+  Powered by <a href="http://github.com/bry4n/sinatra-mvc/">Sinatra-MVC</a>
 </div>
 </body>
 </html>
