@@ -3,6 +3,8 @@ An Agile Sinatra-based MVC app
 
 Want an agile MVC structured app in Sinatra? 
 
+ - Demo [http://bry4n.heroku.com/](http://bry4n.heroku.com/)
+
 ## Prerequisites
 
 - [sinatra](http://www.sinatra.com/) (sudo gem install sinatra)
