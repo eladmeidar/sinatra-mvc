@@ -1,6 +1,6 @@
 module Sinatra
 
-  module Authenication
+  module Authentication
     
     def logout!
       session.delete :authorized_user
@@ -32,5 +32,5 @@ module Sinatra
 
   end
 
-  helpers Authenication
+  helpers Authentication
 end
