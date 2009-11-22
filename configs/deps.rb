@@ -1,5 +1,9 @@
 require 'sinatra/base'
 
+## Session Manager/Authenication
+
+# stuff here..
+
 ## Template Engine
 
 #require 'haml'
