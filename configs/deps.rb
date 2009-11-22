@@ -6,7 +6,7 @@ require 'sinatra/base'
 
 ## Template Engine
 
-#require 'haml'
+require 'haml'
 #require 'liquid'
 #require 'ruty'
 #require 'mustache' 

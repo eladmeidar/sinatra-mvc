@@ -22,8 +22,6 @@
 <div class="body">
 <%= yield %>
 </div>
-<div class="footer">
-  Powered by <a href="http://github.com/bry4n/sinatra-mvc/">Sinatra-MVC</a>
-</div>
+<%= partial :"welcome/footer", :render => "haml" %>
 </body>
 </html>
