@@ -2,4 +2,5 @@ require 'app'
 
 use Rack::ShowExceptions
 
-run Sinatra::Application
+puts $config
+MVC.run! $config
