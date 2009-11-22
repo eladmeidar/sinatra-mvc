@@ -2,4 +2,4 @@ require 'app'
 
 use Rack::ShowExceptions
 
-MVC.run!
+run Sinatra::Application
