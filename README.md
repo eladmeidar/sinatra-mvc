@@ -3,7 +3,7 @@ An Agile Sinatra-based MVC app
 
 Want an agile MVC structured app in Sinatra? 
 
- - Demo [http://bry4n.heroku.com/](http://bry4n.heroku.com/)
+ - Demo [http://sinatra-mvc.heroku.com/](http://sinatra-mvc.heroku.com/)
 
 ## Prerequisites
 
