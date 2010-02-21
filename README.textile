@@ -1,0 +1,4 @@
+h1. Sinatra MVC skeleton
+
+* Edit `configs/default_routes.rb` and add your own root uri
+* check `load_dependencies` on `app.rb` and add library names you need (e.g: `load_dependencies :erb, :haml, :json, :activerecord`)
