@@ -1,3 +1,6 @@
+require "yaml"
+require 'rubygems'
+require 'sinatra'
 require 'sinatra/base'
 
 ## Session Manager/Authenication
@@ -6,7 +9,8 @@ require 'sinatra/base'
 
 ## Template Engine
 
-require 'haml'
+#require 'haml'
+#require 'erb'
 #require 'liquid'
 #require 'ruty'
 #require 'mustache' 

@@ -1,4 +1,4 @@
-require "yaml"
+require 'configs/deps'
 
 config = YAML.load_file("configs/config.yml")
 if config["logging"] == true
@@ -6,9 +6,8 @@ if config["logging"] == true
   $stderr.reopen(log)
 end
 
-require 'rubygems'
-require 'sinatra'
-require 'configs/deps'
+
+
 
 set :environment, :"#{config['environment']}"
 set :server, config["server"]
@@ -21,8 +20,8 @@ enable :sessions, :logging, :dump_errors, :raise_errors, :static
 
 load 'configs/configures.rb'
 
-Dir.glob("app/controllers/*.rb") {|file| load file}
-Dir.glob("app/models/*.rb") {|file| load file}
-Dir.glob("helpers/*.rb") {|file| load file}
+Dir.glob("app/controllers/**/*.rb") {|file| load file}
+Dir.glob("app/models/**/*.rb") {|file| load file}
+Dir.glob("app/helpers/**/*.rb") {|file| load file}
 
 load "configs/routes.rb"
