@@ -1,3 +1,7 @@
+get '/' do
+  "overwriting works"
+end
+
 get "/welcome/?" do
   @name = "Amazing!"
   erb :"welcome/index"

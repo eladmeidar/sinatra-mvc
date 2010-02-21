@@ -22,8 +22,10 @@ enable :sessions, :logging, :dump_errors, :raise_errors, :static
 
 load 'configs/configures.rb'
 
+load "configs/default_routes.rb"
+
 Dir.glob("app/controllers/**/*.rb") {|file| load file}
 Dir.glob("app/models/**/*.rb") {|file| load file}
 Dir.glob("app/helpers/**/*.rb") {|file| load file}
 
-load "configs/routes.rb"
+

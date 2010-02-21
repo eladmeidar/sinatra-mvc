@@ -8,7 +8,7 @@ require 'sinatra/base'
 ## Template Engine
 
 #require 'haml'
-#require 'erb'
+require 'erb'
 #require 'liquid'
 #require 'ruty'
 #require 'mustache' 
