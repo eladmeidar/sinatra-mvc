@@ -29,6 +29,7 @@ module Sinatra
       (args + DEFAULT_DEPENDENCIES).uniq.each do |lib|
         begin
           require lib.to_s
+          puts "== Loaded #{lib.to_s}"
         rescue LoadError
           puts "== Unable to load dependency - #{lib}"
           exit 0
@@ -45,7 +46,7 @@ module Sinatra
       end
 
       # Load default gems
-      load_dependencies *required_dependencies
+      load_dependencies *((required_dependencies + config['required_dependencies'].split(',').collect(&:strip)).uniq)
 
 
       set :environment, :"#{config['environment']}"
