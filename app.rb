@@ -1,3 +1,5 @@
+require 'rubygems'
+require 'sinatra'
 require 'configs/deps'
 
 config = YAML.load_file("configs/config.yml")
