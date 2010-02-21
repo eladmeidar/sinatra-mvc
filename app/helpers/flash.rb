@@ -31,6 +31,11 @@ class FlashObject
     @flash_hash = Hash.new(nil)
   end
   
+  def now
+    clear
+    @flash_hash
+  end
+  
   def empty?
     @flash_hash.empty?
   end
