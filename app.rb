@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'sinatra'
-require 'configs/deps'
+require 'sinatra/base'
+require 'configs/dependencies'
 
 config = YAML.load_file("configs/config.yml")
 if config["logging"] == true
@@ -8,7 +9,7 @@ if config["logging"] == true
   $stderr.reopen(log)
 end
 
-
+load_dependencies
 
 
 set :environment, :"#{config['environment']}"
@@ -29,3 +30,5 @@ Dir.glob("app/models/**/*.rb") {|file| load file}
 Dir.glob("app/helpers/**/*.rb") {|file| load file}
 
 
+puts Sinatra::Application.routes['GET'].inspect
+exit 0
