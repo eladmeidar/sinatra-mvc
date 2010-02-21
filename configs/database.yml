@@ -1,0 +1,3 @@
+development:
+    host: localhost
+    database: sinatra_mvc_development
