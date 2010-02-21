@@ -1,9 +1,7 @@
-get '/' do
-  "overwriting works"
-end
 
 get "/welcome/?" do
-  @name = "Amazing!"
+  flash[:notice] = 'i am so awesome'
+  @name = "sutff"
   erb :"welcome/index"
 end
 

@@ -20,6 +20,9 @@
  <h1> Welcome to Sinatra-MVC </h1>
 </div>
 <div class="body">
+<div id="flash">
+	<%= flash_helper %>
+</div>
 <%= yield %>
 </div>
 <%= partial :"welcome/footer" %>

@@ -28,7 +28,3 @@ load "configs/default_routes.rb"
 Dir.glob("app/controllers/**/*.rb") {|file| load file}
 Dir.glob("app/models/**/*.rb") {|file| load file}
 Dir.glob("app/helpers/**/*.rb") {|file| load file}
-
-
-puts Sinatra::Application.routes['GET'].inspect
-exit 0
