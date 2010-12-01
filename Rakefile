@@ -1,4 +1,4 @@
-require 'spec/rake/spectask'
+require 'rspec/core/rake_task'
 require 'yaml'
 
 begin
@@ -16,13 +16,13 @@ end
 task :default => :test
 task :test => :spec
 
-if !defined?(Spec)
+if !defined?(RSpec)
   puts "rspec is required! - rake gems:install"
 else
  desc "do the test first"
- Spec::Rake::SpecTask.new('spec') do |t|
-  t.spec_files = FileList['spec/**/*.rb']
-  t.spec_opts = ['-cfs']
+  RSpec::Core::RakeTask.new('spec') do |t|
+   t.pattern = 'spec/**/*.rb'
+   t.rspec_opts = ['--backtrace']
  end
 end
 
